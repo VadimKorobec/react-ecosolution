@@ -20,6 +20,7 @@ export const App = () => {
       <Contact />
       <Form />
       <Footer/>
-    </>
+   </>
+   
   );
 };
