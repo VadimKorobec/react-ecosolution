@@ -4,17 +4,17 @@ import svgGreen from '../../assets/img/GREENERGY FOR LIFE.svg'
 import svgMenu from '../../assets/img/menu.svg'
 // import svgEllipse from '../../assets/img/ellipse.svg'
 import { Container } from '../Container/Container'
-import { HeaderWrapper,BurgerMenu  } from "./Header.styled";
+import { HeaderWrapper,BurgerMenu, LogoWrap  } from "./Header.styled";
  
 export const Header = () => {
     return (
       <Container>
         <HeaderWrapper>
-          <div style={{gap:'4px',display:'flex'}}>
+          <LogoWrap>
             <img src={svgAsset} alt="logo" />
             <img src={svgEco} alt="logo" />
             <img src={svgGreen} alt="logo" />
-          </div>
+          </LogoWrap>
           <BurgerMenu src={svgMenu} alt="menu" />
           {/* <button type="button">
             Get in touch <img src={svgEllipse} alt="ellips" />
