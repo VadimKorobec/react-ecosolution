@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import {ReactComponent as Arrow } from '../../assets/img/arrow.svg'
+import { ReactComponent as Arrow } from "../../assets/img/arrow.svg";
+import { ReactComponent as arrowLeft } from "../../assets/img/arrowLeftBig.svg";
+import { ReactComponent as arrowRight } from "../../assets/img/arrowRightBig.svg";
 
 export const Title = styled.h2`
   font-family: "Oswald", sans-serif;
@@ -9,7 +11,7 @@ export const Title = styled.h2`
   color: #173d33;
   text-transform: uppercase;
   margin-bottom: 24px;
-  width:264px;
+  width: 264px;
 `;
 
 export const Wrapper = styled.div`
@@ -42,14 +44,30 @@ export const ButtonWrap = styled.div`
   gap: 12px;
 `;
 
-export const Button = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 66px;
-  height: 66px;
-  border: 1px solid #173d33;
+export const ArrowLeft = styled(arrowLeft)`
+  stroke: #173d33;
+  padding: 14px;
+  border: 1.5px solid #173d33;
   border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    stroke: #97d28b;
+    border-color: #97d28b;
+  }
+`;
+
+export const ArrowRight = styled(arrowRight)`
+  stroke: #173d33;
+  padding: 14px;
+  border: 1.5px solid #173d33;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    stroke: #97d28b;
+    border-color: #97d28b;
+  }
 `;
 
 export const Icon = styled.img`
@@ -59,7 +77,7 @@ export const Icon = styled.img`
 `;
 
 export const Card = styled.div`
-    background-color: #eaedf1;
+  background-color: #eaedf1;
 `;
 
 export const CardWrapper = styled.div`
@@ -69,7 +87,7 @@ export const CardWrapper = styled.div`
 export const CardTitleWrap = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items:center;
+  align-items: center;
   margin-bottom: 21px;
 `;
 
@@ -81,16 +99,15 @@ export const CardTitle = styled.h3`
   height: 66px;
 `;
 
-
 export const CardIcon = styled(Arrow)`
-  padding:16px;
-  background-color:#97d28b;
-  border-radius:50%;
+  padding: 16px;
+  background-color: #97d28b;
+  border-radius: 50%;
   stroke: #173d33;
   cursor: pointer;
 
-  &:hover  {
-    background-color:#173d33;
+  &:hover {
+    background-color: #173d33;
     stroke: #97d28b;
   }
 `;
@@ -119,4 +136,3 @@ export const CardsWrap = styled.div`
   gap: 24px;
   margin-bottom: 36px;
 `;
-

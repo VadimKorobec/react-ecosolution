@@ -54,6 +54,13 @@ export const Button = styled.button`
   background-color: #eaedf1;
   gap: 12px;
   margin-left: auto;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #173d33;
+    border-color: #173d33;
+    color: #97d28b;
+  }
 `;
 
 export const Icon = styled.img`

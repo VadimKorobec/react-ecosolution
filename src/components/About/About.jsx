@@ -1,26 +1,40 @@
-import men from "../../assets/img/men.jpg";
-import man from '../../assets/img/man.jpg'
-import svgOpen from '../../assets/img/maximize-circle.svg'
-import svgResp from '../../assets/img/global-edit.svg'
-import svgCharge from '../../assets/img/cpu-charge.svg'
-import svgRank from '../../assets/img/ranking.svg' 
-import { Container } from '../Container/Container'
-import { Title,Text, Img, Card, TitleWrapper, CardTitle, Line, CardText, CardWrapper } from "./About.styled";
+import svgOpen from "../../assets/img/maximize-circle.svg";
+import svgResp from "../../assets/img/global-edit.svg";
+import svgCharge from "../../assets/img/cpu-charge.svg";
+import svgRank from "../../assets/img/ranking.svg";
+import { Container } from "../Container/Container";
+import {
+  Title,
+  Text,
+  Card,
+  TitleWrapper,
+  CardTitle,
+  Line,
+  CardText,
+  CardWrapper,
+  Wrapper,
+  LineVertical,
+  TextWrapper,
+  ImgRight,
+  ImgLeft,
+} from "./About.styled";
 
 export const About = () => {
   return (
     <Container>
-      <Title>
-        Main values of our
-        <br /> company
-      </Title>
-      <Text>
-        EcoSolution envisions a world where sustainable energy solutions power a
-        brighter and cleaner future for all. We aspire to be at the forefront of
-        the global shift towards renewable energy, leading the way in innovative
-        technologies that harness the power of nature to meet the world's energy
-        needs.
-      </Text>
+      <Wrapper>
+        <Title>Main values of our company</Title>
+        <TextWrapper>
+          <LineVertical></LineVertical>
+          <Text>
+            EcoSolution envisions a world where sustainable energy solutions
+            power a brighter and cleaner future for all. We aspire to be at the
+            forefront of the global shift towards renewable energy, leading the
+            way in innovative technologies that harness the power of nature to
+            meet the world's energy needs.
+          </Text>
+        </TextWrapper>
+      </Wrapper>
       <CardWrapper>
         <Card>
           <TitleWrapper>
@@ -43,8 +57,8 @@ export const About = () => {
             lives and the lives of future generations
           </CardText>
         </Card>
-        <Img src={men} alt="men" />
-        <Img src={man} alt="man" />
+        <ImgRight />
+        <ImgLeft />
         <Card>
           <TitleWrapper>
             <img src={svgCharge} alt="icon" />

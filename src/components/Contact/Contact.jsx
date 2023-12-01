@@ -1,29 +1,44 @@
-import callSvg from "../../assets/img/call.svg";
-import smsSvg from "../../assets/img/sms.svg";
-import mapSvg from "../../assets/img/map.svg";
-import facebookSvg from "../../assets/img/facebook.svg";
-import instagramSvg from "../../assets/img/instagram.svg";
-import { Address, Icon, IconWrap, Link, LinkWrap, SubTitle, Title } from "./Contact.styled";
 import { Container } from "../Container/Container";
+
+import mapSvg from "../../assets/img/map.svg";
+
+import {
+  Address,
+  Call,
+  Facebook,
+  IconWrap,
+  Instagram,
+  Link,
+  LinkWrap,
+  PhoneWrap,
+  Sms,
+  SmsWrap,
+  SubTitle,
+  Title,
+} from "./Contact.styled";
 
 export const Contact = () => {
   return (
     <Container>
       <Title>Contact us</Title>
       <SubTitle>Phone</SubTitle>
-      <LinkWrap>
-        <img src={callSvg} alt="call" />
-        <Link href="tel:38 (098) 12 34 567">38 (098) 12 34 567</Link>
-      </LinkWrap>
-      <LinkWrap>
-        <img src={callSvg} alt="call" />
-        <Link href="tel:38 (098) 12 34 567">38 (098) 12 34 567</Link>
-      </LinkWrap>
+      <PhoneWrap>
+        <Link href="tel:38 (098) 12 34 567">
+          <Call />
+          38 (098) 12 34 567
+        </Link>
+        <Link href="tel:38 (098) 12 34 567">
+          <Call />
+          38 (098) 12 34 567
+        </Link>
+      </PhoneWrap>
       <SubTitle>E-mail</SubTitle>
-      <LinkWrap>
-        <img src={smsSvg} alt="sms" />
-        <Link href="mailto:office@ecosolution.com">office@ecosolution.com</Link>
-      </LinkWrap>
+      <SmsWrap>
+        <Link href="mailto:office@ecosolution.com">
+          <Sms />
+          office@ecosolution.com
+        </Link>
+      </SmsWrap>
       <SubTitle>Address</SubTitle>
       <LinkWrap>
         <img src={mapSvg} alt="map" />
@@ -32,10 +47,10 @@ export const Contact = () => {
       <SubTitle>Social Networks:</SubTitle>
       <IconWrap>
         <a href="https://www.facebook.com/">
-          <Icon src={facebookSvg} alt="icon" />
+          <Facebook />
         </a>
         <a href="https://www.instagram.com/">
-          <Icon src={instagramSvg} alt="icon" />
+          <Instagram />
         </a>
       </IconWrap>
     </Container>

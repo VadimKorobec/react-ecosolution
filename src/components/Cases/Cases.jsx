@@ -1,5 +1,4 @@
-import arrowRight from "../../assets/img/arrowRightBig.svg";
-import arrowLeft from "../../assets/img/arrowLeftBig.svg";
+
 
 import mills from "../../assets/img/mills.jpg";
 import batteries from "../../assets/img/batteries.jpg";
@@ -8,7 +7,8 @@ import mills2 from "../../assets/img/mills-2.jpg";
 import station from "../../assets/img/station.jpg";
 import { Container } from "../Container/Container";
 import {
-  Button,
+  ArrowLeft,
+  ArrowRight,
   ButtonWrap,
   Card,
   CardIcon,
@@ -19,7 +19,6 @@ import {
   CardWrapper,
   CardsWrap,
   Count,
-  Icon,
   Line,
   Number,
   NumberWrap,
@@ -30,19 +29,15 @@ import {
 export const Cases = () => {
   return (
     <Container>
-      <Title>Successful cases of  our company</Title>
+      <Title>Successful cases of our company</Title>
       <Wrapper>
         <NumberWrap>
           <Number>02</Number>
           <Count>/05</Count>
         </NumberWrap>
         <ButtonWrap>
-          <Button>
-            <Icon src={arrowLeft} alt="arrow" />
-          </Button>
-          <Button>
-            <Icon src={arrowRight} alt="arrow" />
-          </Button>
+          <ArrowLeft />
+          <ArrowRight/>
         </ButtonWrap>
       </Wrapper>
       <CardsWrap>
