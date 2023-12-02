@@ -10,14 +10,54 @@ export const Title = styled.h2`
   line-height: 28px;
   color: #173d33;
   text-transform: uppercase;
-  margin-bottom: 24px;
   width: 264px;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-right:90px;
+  }
+`;
+
+export const TitleWrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 38px;
+  }
+`;
+
+export const LineWrap = styled.div`
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+`;
+
+export const LineVertical = styled.div`
+  height: 48px;
+  border-left: 1px solid #97d28b;
+  position: relative;
+  left: 50%;
+
+  @media screen and (min-width: 768px) {
+    height: 65px;
+  }
 `;
 
 export const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
-  margin-bottom: 19px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 19px;
+  }
 `;
 
 export const NumberWrap = styled.div`
@@ -55,6 +95,10 @@ export const ArrowLeft = styled(arrowLeft)`
     stroke: #97d28b;
     border-color: #97d28b;
   }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 126px;
+  }
 `;
 
 export const ArrowRight = styled(arrowRight)`
@@ -78,6 +122,10 @@ export const Icon = styled.img`
 
 export const Card = styled.div`
   background-color: #eaedf1;
+  @media screen and (min-width:768px) and (max-width:1279px) {
+    width:342px;
+    height:322px;
+  }
 `;
 
 export const CardWrapper = styled.div`
@@ -134,5 +182,16 @@ export const CardsWrap = styled.div`
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-bottom: 36px;
+
+  @media screen and (max-width: 480px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width:768px) and (max-width:1279px) {
+    margin-bottom:107px;
+  }
+
+  @media screen and (min-width:1280px) {
+    margin-bottom:127px;
+  }
 `;

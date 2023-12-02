@@ -20,26 +20,34 @@ import {
   CardsWrap,
   Count,
   Line,
+  LineVertical,
+  LineWrap,
   Number,
   NumberWrap,
   Title,
+  TitleWrapper,
   Wrapper,
 } from "./Cases.styled";
 
 export const Cases = () => {
   return (
     <Container>
-      <Title>Successful cases of our company</Title>
-      <Wrapper>
-        <NumberWrap>
-          <Number>02</Number>
-          <Count>/05</Count>
-        </NumberWrap>
-        <ButtonWrap>
-          <ArrowLeft />
-          <ArrowRight/>
-        </ButtonWrap>
-      </Wrapper>
+      <TitleWrapper>
+        <Title>Successful cases of our company</Title>
+        <LineWrap>
+          <LineVertical></LineVertical>
+        </LineWrap>
+        <Wrapper>
+          <NumberWrap>
+            <Number>02</Number>
+            <Count>/05</Count>
+          </NumberWrap>
+          <ButtonWrap>
+            <ArrowLeft />
+            <ArrowRight />
+          </ButtonWrap>
+        </Wrapper>
+      </TitleWrapper>
       <CardsWrap>
         <Card>
           <img src={mills} alt="mills" />

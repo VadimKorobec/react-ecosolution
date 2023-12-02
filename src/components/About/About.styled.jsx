@@ -61,18 +61,18 @@ export const Text = styled.p`
 
 export const ImgRight = styled.div`
   background-image: url(${men});
-  width:342px;
-  height:197px;
+  grid-column-start: span 2;
 
   @media screen and (max-width: 767.9px) {
     display: none;
   }
+
+  
 `;
 
 export const ImgLeft = styled.div`
   background-image: url(${man});
-  width: 342px;
-  height: 197px;
+    grid-column-start:span 2;
 
   @media screen and (max-width: 767.9px) {
     display: none;
@@ -89,14 +89,25 @@ export const CardWrapper = styled.div`
     margin-bottom: 36px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 159px 159px 159px 159px;
+    grid-template-rows: 197px 197px;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
+    margin-bottom:100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: grid;
+    grid-template-columns: 274px 274px 274px  274px;
+    grid-template-rows: 339px 339px;
+    grid-column-gap: 48px;
+    grid-row-gap: 48px;
   }
 `;
+
+
 
 export const Card = styled.div`
   padding: 12px 12px 12px 12px;
@@ -106,7 +117,7 @@ export const Card = styled.div`
     height: 197px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width:1279px) {
     width: 135px;
     height: 173px;
   }
