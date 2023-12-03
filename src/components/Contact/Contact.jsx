@@ -1,6 +1,6 @@
 import { Container } from "../Container/Container";
 
-import mapSvg from "../../assets/img/map.svg";
+import mapSvg from "../../assets/icon/map.svg";
 
 import {
   Address,

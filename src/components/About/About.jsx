@@ -1,7 +1,7 @@
-import svgOpen from "../../assets/img/maximize-circle.svg";
-import svgResp from "../../assets/img/global-edit.svg";
-import svgCharge from "../../assets/img/cpu-charge.svg";
-import svgRank from "../../assets/img/ranking.svg";
+import svgOpen from "../../assets/icon/maximize-circle.svg";
+import svgResp from "../../assets/icon/global-edit.svg";
+import svgCharge from "../../assets/icon/cpu-charge.svg";
+import svgRank from "../../assets/icon/ranking.svg";
 import { Container } from "../Container/Container";
 import {
   Title,

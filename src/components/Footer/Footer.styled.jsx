@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { ReactComponent as arrow } from "../../assets/img/arrowAbove.svg";
-import { ReactComponent as facebook } from "../../assets/img/facebook.svg";
-import { ReactComponent as instagram } from "../../assets/img/instagram.svg";
+import { ReactComponent as arrow } from "../../assets/icon/arrowAbove.svg";
+import { ReactComponent as facebook } from "../../assets/icon/facebook.svg";
+import { ReactComponent as instagram } from "../../assets/icon/instagram.svg";
 
 export const Line = styled.div`
   width: 100%;

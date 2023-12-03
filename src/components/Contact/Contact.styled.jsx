@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { ReactComponent as call } from "../../assets/img/call.svg";
-import { ReactComponent as sms } from "../../assets/img/sms.svg";
-import { ReactComponent as facebook } from "../../assets/img/facebook.svg";
-import { ReactComponent as instagram } from "../../assets/img/instagram.svg";
+import { ReactComponent as call } from "../../assets/icon/call.svg";
+import { ReactComponent as sms } from "../../assets/icon/sms.svg";
+import { ReactComponent as facebook } from "../../assets/icon/facebook.svg";
+import { ReactComponent as instagram } from "../../assets/icon/instagram.svg";
 
 export const Title = styled.h2`
   font-family: "Oswald", sans-serif;

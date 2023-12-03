@@ -1,4 +1,4 @@
-import arrowRight from "../../assets/img/arrowRightSmall.svg";
+import arrowRight from "../../assets/icon/arrowRightSmall.svg";
 import { Button, Forma, Icon, Input, Label, Lina, Line, Textarea } from "./Form.styled";
 import { Container } from "../Container/Container";
 

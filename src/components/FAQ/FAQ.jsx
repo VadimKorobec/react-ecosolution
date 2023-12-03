@@ -1,6 +1,6 @@
-import plus from "../../assets/img/plus.svg";
+import plus from "../../assets/icon/plus.svg";
 // import minus from '../../assets/img/minus.svg'
-import ellips from "../../assets/img/ellipse.svg";
+import ellips from "../../assets/icon/ellipse.svg";
 
 import { Container } from "../Container/Container";
 import {

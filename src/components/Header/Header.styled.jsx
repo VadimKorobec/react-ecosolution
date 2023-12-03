@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { ReactComponent as menu } from "../../assets/img/menu.svg";
-import { ReactComponent as arrow } from "../../assets/img/arrowDown.svg";
+import { ReactComponent as menu } from "../../assets/icon/menu.svg";
+import { ReactComponent as arrow } from "../../assets/icon/arrowDown.svg";
 
 export const HeaderWrapper = styled.header`
   display: flex;

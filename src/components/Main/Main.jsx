@@ -1,7 +1,21 @@
+import svgArrow from "../../assets/icon/arrowRightSmall.svg";
 import mill from '../../assets/img/mill.jpg'
-import svgArrow from '../../assets/img/arrowRightSmall.svg'
-import { Container } from '../Container/Container';
-import { Title,Text, Button, Icon, Line, Adress, Link, Unicode, Img, TitleWrapper, TextWrapper, AddressWrapper } from './Main.styled';
+import { Container } from "../Container/Container";
+import {
+  Title,
+  Text,
+  Button,
+  Icon,
+  Line,
+  Adress,
+  Link,
+  Unicode,
+  TitleWrapper,
+  TextWrapper,
+  AddressWrapper,
+  Img,
+  
+} from "./Main.styled";
 
 export const Main = () => {
   return (
@@ -16,7 +30,7 @@ export const Main = () => {
           </Text>
           <Button>
             Learn more
-            <Icon src={svgArrow} alt="arrow" ></Icon>
+            <Icon src={svgArrow} alt="arrow"></Icon>
           </Button>
         </TextWrapper>
       </TitleWrapper>
@@ -26,7 +40,8 @@ export const Main = () => {
         <Link href="mailto:office@ecosolution.com">office@ecosolution.com</Link>
         <Unicode>ecosolution &copy; 2023</Unicode>
       </AddressWrapper>
-      <Img src={mill} alt="mill" />
+      <Img src={mill} alt="img" />
+     
     </Container>
   );
 };

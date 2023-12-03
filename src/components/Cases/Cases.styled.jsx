@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { ReactComponent as Arrow } from "../../assets/img/arrow.svg";
-import { ReactComponent as arrowLeft } from "../../assets/img/arrowLeftBig.svg";
-import { ReactComponent as arrowRight } from "../../assets/img/arrowRightBig.svg";
+import { ReactComponent as Arrow } from "../../assets/icon/arrow.svg";
+import { ReactComponent as arrowLeft } from "../../assets/icon/arrowLeftBig.svg";
+import { ReactComponent as arrowRight } from "../../assets/icon/arrowRightBig.svg";
 
 export const Title = styled.h2`
   font-family: "Oswald", sans-serif;

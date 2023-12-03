@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import men from "../../assets/img/Men.png";
 import man from '../../assets/img/Man.png'
+import man_lg from '../../assets/img/man_lg.png'
+import men_lg from '../../assets/img/men_lg.jpg'
 
 export const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
@@ -60,19 +62,27 @@ export const Text = styled.p`
 `;
 
 export const ImgRight = styled.div`
-  background-image: url(${men});
   grid-column-start: span 2;
 
-  @media screen and (max-width: 767.9px) {
-    display: none;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: url(${men});
   }
 
-  
+  @media screen and (min-width: 1280px) {
+    background-image: url(${men_lg});
+  }
 `;
 
 export const ImgLeft = styled.div`
-  background-image: url(${man});
-    grid-column-start:span 2;
+  grid-column-start: span 2;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    background-image: url(${man});
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(${man_lg});
+  }
 
   @media screen and (max-width: 767.9px) {
     display: none;
@@ -100,7 +110,7 @@ export const CardWrapper = styled.div`
 
   @media screen and (min-width: 1280px) {
     display: grid;
-    grid-template-columns: 274px 274px 274px  274px;
+    grid-template-columns: 234px 234px 234px  234px;
     grid-template-rows: 339px 339px;
     grid-column-gap: 48px;
     grid-row-gap: 48px;
