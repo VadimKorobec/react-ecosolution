@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import men from "../../assets/img/Men.png";
-import man from '../../assets/img/Man.png'
-import man_lg from '../../assets/img/man_lg.png'
-import men_lg from '../../assets/img/men_lg.jpg'
+import man from "../../assets/img/Man.png";
+import man_lg from "../../assets/img/man_lg.png";
+import men_lg from "../../assets/img/men_lg.jpg";
 
 export const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
@@ -62,30 +62,36 @@ export const Text = styled.p`
 `;
 
 export const ImgRight = styled.div`
-  grid-column-start: span 2;
+
+  @media screen and (max-width: 767.9px) {
+    display: none;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     background-image: url(${men});
+    grid-column-start: span 2;
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url(${men_lg});
+    grid-column-start: span 2;
   }
 `;
 
 export const ImgLeft = styled.div`
-  grid-column-start: span 2;
 
+  @media screen and (max-width: 767.9px) {
+    display: none;
+  }
+  
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     background-image: url(${man});
+    grid-column-start: span 2;
   }
 
   @media screen and (min-width: 1280px) {
     background-image: url(${man_lg});
-  }
-
-  @media screen and (max-width: 767.9px) {
-    display: none;
+    grid-column-start: span 2;
   }
 `;
 
@@ -105,19 +111,17 @@ export const CardWrapper = styled.div`
     grid-template-rows: 197px 197px;
     grid-column-gap: 24px;
     grid-row-gap: 24px;
-    margin-bottom:100px;
+    margin-bottom: 100px;
   }
 
   @media screen and (min-width: 1280px) {
     display: grid;
-    grid-template-columns: 234px 234px 234px  234px;
+    grid-template-columns: 274px 274px 274px 274px;
     grid-template-rows: 339px 339px;
     grid-column-gap: 48px;
     grid-row-gap: 48px;
   }
 `;
-
-
 
 export const Card = styled.div`
   padding: 12px 12px 12px 12px;
@@ -127,7 +131,7 @@ export const Card = styled.div`
     height: 197px;
   }
 
-  @media screen and (min-width: 768px) and (max-width:1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 135px;
     height: 173px;
   }

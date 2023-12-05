@@ -1,148 +1,69 @@
-import plus from "../../assets/icon/plus.svg";
-// import minus from '../../assets/img/minus.svg'
-import ellips from "../../assets/icon/ellipse.svg";
+import { useState } from "react";
 
 import { Container } from "../Container/Container";
+
+import ellips from "../../assets/icon/ellipse.svg";
+import titles from "../../assets/titles.json";
+
 import {
-  Title,
-  Line,
-  CardTitle,
-  CardText,
-  TitleWrap,
-  Card,
-  Text,
   Button,
-  ContentWrapper,
-  CardsWrapper,
   ButtonWrapper,
+  Card,
+  CardText,
+  CardTitle,
+  CardTitleWrapper,
+  ContentWrapper,
+  GridWrapper,
+  Line,
+  MinusIcon,
+  PlusIcon,
+  Text,
+  Title,
 } from "./FQA.styled";
 
 export const FAQ = () => {
+  const [active, setActive] = useState(0);
+
   return (
     <Container>
-      <ContentWrapper>
+      <GridWrapper>
         <Title>
           Frequently Asked <br /> Questions
         </Title>
-        <CardsWrapper>
-          <Line></Line>
-          <Card>
-            <TitleWrap>
-              <img src={plus} alt="plus" />
-              {/* <img src={minus} alt="minus" /> */}
-              <CardTitle>
-                How do wind turbines and solar panels work together in a
-                renewable energy system?
-              </CardTitle>
-            </TitleWrap>
-            <CardText>
-              Wind turbines and solar panels generate electricity through
-              different mechanisms. Wind turbines harness the kinetic energy of
-              the wind to turn blades, which then drive a generator. Solar
-              panels convert sunlight into electricity through the photovoltaic
-              effect. When integrated into a renewable energy system, these
-              technologies complement each other by providing a continuous and
-              reliable power supply. Wind power is often more abundant during
-              certain times, while solar power is consistent during daylight
-              hours, resulting in a more stable overall energy output.
-            </CardText>
+        {titles.map((item, idx) => (
+          <Card key={idx}>
+            <Line></Line>
+            <ContentWrapper onClick={() => setActive(idx)}>
+              <CardTitleWrapper>
+                {active === idx ? <PlusIcon /> : <MinusIcon />}
+                <CardTitle>{item.title}</CardTitle>
+              </CardTitleWrapper>
+              {active === idx ? (
+                <CardText>
+                  Wind turbines and solar panels generate electricity through
+                  different mechanisms. Wind turbines harness the kinetic energy
+                  of the wind to turn blades, which then drive a generator.
+                  Solar panels convert sunlight into electricity through the
+                  photovoltaic effect. When integrated into a renewable energy
+                  system, these technologies complement each other by providing
+                  a continuous and reliable power supply. Wind power is often
+                  more abundant during certain times, while solar power is
+                  consistent during daylight hours, resulting in a more stable
+                  overall energy output.
+                </CardText>
+              ) : (
+                ""
+              )}
+            </ContentWrapper>
           </Card>
-          <Line></Line>
-          <Card>
-            <TitleWrap>
-              <img src={plus} alt="plus" />
-              {/* <img src={minus} alt="minus" /> */}
-              <CardTitle>
-                What sets EcoSolution's renewable energy solutions apart from
-                others on the market?
-              </CardTitle>
-            </TitleWrap>
-            <CardText>
-              Wind turbines and solar panels generate electricity through
-              different mechanisms. Wind turbines harness the kinetic energy of
-              the wind to turn blades, which then drive a generator. Solar
-              panels convert sunlight into electricity through the photovoltaic
-              effect. When integrated into a renewable energy system, these
-              technologies complement each other by providing a continuous and
-              reliable power supply. Wind power is often more abundant during
-              certain times, while solar power is consistent during daylight
-              hours, resulting in a more stable overall energy output.
-            </CardText>
-          </Card>
-          <Line></Line>
-          <Card>
-            <TitleWrap>
-              <img src={plus} alt="plus" />
-              {/* <img src={minus} alt="minus" /> */}
-              <CardTitle>
-                How can businesses and communities benefit from integrating
-                renewable energy solutions from EcoSolution?
-              </CardTitle>
-            </TitleWrap>
-            <CardText>
-              Wind turbines and solar panels generate electricity through
-              different mechanisms. Wind turbines harness the kinetic energy of
-              the wind to turn blades, which then drive a generator. Solar
-              panels convert sunlight into electricity through the photovoltaic
-              effect. When integrated into a renewable energy system, these
-              technologies complement each other by providing a continuous and
-              reliable power supply. Wind power is often more abundant during
-              certain times, while solar power is consistent during daylight
-              hours, resulting in a more stable overall energy output.
-            </CardText>
-          </Card>
-          <Line></Line>
-          <Card>
-            <TitleWrap>
-              <img src={plus} alt="plus" />
-              {/* <img src={minus} alt="minus" /> */}
-              <CardTitle>
-                What measures does EcoSolution take to ensure the environmental
-                sustainability of its products?
-              </CardTitle>
-            </TitleWrap>
-            <CardText>
-              Wind turbines and solar panels generate electricity through
-              different mechanisms. Wind turbines harness the kinetic energy of
-              the wind to turn blades, which then drive a generator. Solar
-              panels convert sunlight into electricity through the photovoltaic
-              effect. When integrated into a renewable energy system, these
-              technologies complement each other by providing a continuous and
-              reliable power supply. Wind power is often more abundant during
-              certain times, while solar power is consistent during daylight
-              hours, resulting in a more stable overall energy output.
-            </CardText>
-          </Card>
-          <Line></Line>
-          <Card>
-            <TitleWrap>
-              <img src={plus} alt="plus" />
-              {/* <img src={minus} alt="minus" /> */}
-              <CardTitle>
-                How does EcoSolution engage with local communities and support a
-                just transition to renewable energy?
-              </CardTitle>
-            </TitleWrap>
-            <CardText>
-              Wind turbines and solar panels generate electricity through
-              different mechanisms. Wind turbines harness the kinetic energy of
-              the wind to turn blades, which then drive a generator. Solar
-              panels convert sunlight into electricity through the photovoltaic
-              effect. When integrated into a renewable energy system, these
-              technologies complement each other by providing a continuous and
-              reliable power supply. Wind power is often more abundant during
-              certain times, while solar power is consistent during daylight
-              hours, resulting in a more stable overall energy output.
-            </CardText>
-          </Card>
-        </CardsWrapper>
+        ))}
         <ButtonWrapper>
-          <Text>Didn't find the answer to your question?</Text>
+          <Text>Didn't find the answer to your question? </Text>
           <Button>
             Contact Us <img src={ellips} alt="ellips" />
           </Button>
         </ButtonWrapper>
-      </ContentWrapper>
+      </GridWrapper>
     </Container>
   );
 };
