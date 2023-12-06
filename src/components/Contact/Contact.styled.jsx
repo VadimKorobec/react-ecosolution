@@ -7,12 +7,41 @@ import { ReactComponent as instagram } from "../../assets/icon/instagram.svg";
 export const Title = styled.h2`
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 28px;
-  line-height: 28px;
   color: #173d33;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom:24px;
+
+  @media screen and (max-width: 767px) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height:36px;
+    margin-bottom:40px;
+  }
 `;
+
+export const Wrapper = styled.div`
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:100px;
+  }
+`;
+
+
+export const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction:column;
+  gap: 24px;
+
+  @media screen and (max-width:767px) {
+    margin-bottom:24px;
+  }
+`
 
 export const SubTitle = styled.h4`
   font-weight: 400;
@@ -20,7 +49,7 @@ export const SubTitle = styled.h4`
   line-height: 19.2px;
   color: #173d33;
   margin-bottom: 8px;
-  padding-top: 24px;
+  
 `;
 
 export const PhoneWrap = styled.div`
@@ -61,7 +90,7 @@ export const Address = styled.p`
 export const IconWrap = styled.div`
   display: flex;
   gap: 8px;
-  margin-bottom: 24px;
+  
 `;
 
 export const Icon = styled.img`

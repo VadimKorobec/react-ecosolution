@@ -6,10 +6,16 @@ export const HeaderWrapper = styled.header`
   display: flex;
   justify-content: space-between;
   padding-top: 36px;
-  padding-bottom: 146px;
+  padding-bottom: 36px;
 
-  @media screen and (min-width:768px) {
-    padding-bottom:164px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top:24px;
+    padding-bottom:24px;
   }
 `;
 

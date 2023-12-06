@@ -1,9 +1,17 @@
 import styled from "styled-components";
 
 export const TitleWrapper = styled.div`
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
     justify-content: space-between;
+    padding-top: 128px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 96px;
+    padding-top: 176px;
   }
 `;
 
@@ -21,10 +29,20 @@ export const Title = styled.h1`
   padding-bottom: 24px;
   width: 320px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
+    padding-top: 110px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 48px;
     line-height: 48px;
     width: 300px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 64px;
+    line-height: 64px;
+    width: 485px;
   }
 `;
 
@@ -36,10 +54,16 @@ export const Text = styled.p`
   margin-bottom: 24px;
   word-spacing: 10px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 365px;
     word-spacing: normal;
     margin-bottom: 43px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 365px;
+    word-spacing: normal;
+    margin-bottom: 20px;
   }
 `;
 
@@ -85,27 +109,27 @@ export const Line = styled.div`
     margin-bottom: 24px;
   }
 
-  @media screen and (min-width: 768px) and (max-width:1279px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     margin-bottom: 16px;
   }
 
-  @media screen and (min-width:1280px) {
-    margin-bottom:12px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 12px;
   }
 `;
 
 export const AddressWrapper = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
   }
 
-  @media screen and (min-width:768px) and (max-width:1279px) {
-    margin-bottom:40px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom:36px;
+    margin-bottom: 36px;
   }
 `;
 
@@ -116,6 +140,10 @@ export const Adress = styled.p`
   text-align: center;
   color: #173d33;
   margin-bottom: 8px;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 320px;
+  }
 `;
 
 export const Link = styled.a`
@@ -141,7 +169,11 @@ export const Unicode = styled.p`
     display: none;
   }
 `;
+
+
 export const Img = styled.img`
   margin-bottom: 36px;
-  background-image:url(../)
+  background-image: url(../);
+
+  
 `;

@@ -8,6 +8,7 @@ export const GridWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-column-gap: 24px;
+    padding-bottom:100px;
   }
 `;
 
@@ -34,6 +35,7 @@ export const Title = styled.h2`
 
 export const Card = styled.li`
   list-style: none;
+  
 
   @media screen and (min-width: 768px) {
     grid-column-start: 1;
@@ -48,6 +50,8 @@ export const ContentWrapper = styled.div`
   gap: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
+
+  
 
   @media screen and (min-width: 768px) {
     width: 342px;
@@ -121,6 +125,12 @@ export const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 328px;
+
+  @media screen and (max-width:767px) {
+    margin:0 auto;
+    padding-top:20px;
+    padding-bottom:36px;
+  }
 
   @media screen and (min-width: 768px) {
     margin-top: auto;

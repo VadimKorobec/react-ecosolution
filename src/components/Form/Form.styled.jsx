@@ -5,7 +5,14 @@ export const Forma = styled.form`
   flex-direction: column;
   background-color: #eaedf1;
   padding: 36px 12px;
-  margin-bottom:36px;
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width:768px) {
+    width:342px;
+  }
 `;
 
 export const Label = styled.label`

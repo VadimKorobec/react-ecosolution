@@ -37,7 +37,7 @@ export const FAQ = () => {
               <CardTitleWrapper>
                 {active === idx ? <PlusIcon /> : <MinusIcon />}
                 <CardTitle>{item.title}</CardTitle>
-              </CardTitleWrapper>
+              </CardTitleWrapper >
               {active === idx ? (
                 <CardText>
                   Wind turbines and solar panels generate electricity through
