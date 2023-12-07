@@ -3,19 +3,33 @@ import { ReactComponent as menu } from "../../assets/icon/menu.svg";
 import { ReactComponent as arrow } from "../../assets/icon/arrowDown.svg";
 
 export const HeaderWrapper = styled.header`
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   padding-top: 36px;
   padding-bottom: 36px;
+  
+
+  @media screen and (min-width:360px) and (max-width:479px) {
+   width: 100%;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 440px;
+    
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
-    padding-top: 36px;
-    padding-bottom: 36px;
+    width: 708px;
+    
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top:24px;
-    padding-bottom:24px;
+    width: 1240px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
   }
 `;
 

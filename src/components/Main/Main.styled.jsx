@@ -1,17 +1,19 @@
 import styled from "styled-components";
 
 export const TitleWrapper = styled.div`
+padding-top:222px;
+
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     display: flex;
     justify-content: space-between;
-    padding-top: 128px;
+    padding-top: 240px;
   }
 
   @media screen and (min-width: 1280px) {
     display: flex;
     justify-content: space-between;
     margin-right: 96px;
-    padding-top: 176px;
+    padding-top: 264px;
   }
 `;
 
