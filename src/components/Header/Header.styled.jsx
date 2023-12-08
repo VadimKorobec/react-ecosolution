@@ -9,27 +9,22 @@ export const HeaderWrapper = styled.header`
   justify-content: space-between;
   padding-top: 36px;
   padding-bottom: 36px;
+  width:100%;
+
   
 
-  @media screen and (min-width:360px) and (max-width:479px) {
-   width: 100%;
-  }
-
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    width: 440px;
-    
+    width:440px;
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
     width: 708px;
-    
   }
 
   @media screen and (min-width: 1280px) {
     width: 1240px;
     padding-top: 24px;
     padding-bottom: 24px;
-    
   }
 `;
 
