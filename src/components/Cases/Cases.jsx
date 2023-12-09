@@ -31,7 +31,7 @@ import {
 
 export const Cases = () => {
   return (
-    <Container>
+    <Container id='cases'>
       <TitleWrapper>
         <Title>Successful cases of our company</Title>
         <LineWrap>

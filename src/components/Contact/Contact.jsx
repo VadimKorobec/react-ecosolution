@@ -22,7 +22,7 @@ import {
 
 export const Contact = () => {
   return (
-    <Container>
+    <Container id='contact'>
       <Title>Contact us</Title>
       <Wrapper>
         <ContentWrapper>

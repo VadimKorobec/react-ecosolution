@@ -25,7 +25,7 @@ export const FAQ = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <Container>
+    <Container id='faq'>
       <GridWrapper>
         <Title>
           Frequently Asked <br /> Questions

@@ -28,7 +28,7 @@ export const HeaderWrapper = styled.header`
   }
 `;
 
-export const BurgerMenu = styled(menu)`
+export const BtnMenu = styled(menu)`
   padding: 12px 12px;
   background-color: #dcefd8;
   border-radius: 50%;

@@ -19,7 +19,7 @@ import {
 
 export const Main = () => {
   return (
-    <Container>
+    <Container id='main'>
       <TitleWrapper>
         <Title>RENEWABLE ENERGY FOR ANY TASK</Title>
         <TextWrapper>

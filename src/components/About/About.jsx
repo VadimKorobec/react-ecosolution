@@ -21,7 +21,7 @@ import {
 
 export const About = () => {
   return (
-    <Container>
+    <Container id="about">
       <Wrapper>
         <Title>Main values of our company</Title>
         <TextWrapper>

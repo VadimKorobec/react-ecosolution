@@ -1,5 +1,4 @@
 import { About } from "./components/About/About";
-import { BurgerMenu } from "./components/BurgerMenu/BurgerMenu";
 import { Cases } from "./components/Cases/Cases";
 import { Contact } from "./components/Contact/Contact";
 import { Electricity } from "./components/Electricity/Electricity";
@@ -14,7 +13,6 @@ export const App = () => {
   return (
     <>
       <Header />
-      <BurgerMenu/>
       <Main />
       <About />
       <Electricity />
