@@ -1,15 +1,27 @@
 import titles from "../../assets/titlesMenu.json";
 
-import { ContainerMenu, Overlay } from "./BurgerMenu.styled";
+import { Button, ContainerMenu, IconClose, MenuLink, Overlay } from "./BurgerMenu.styled";
 
 export const BurgerMenu = ({ onClick }) => {
   return (
     <Overlay>
       <ContainerMenu>
-        <button onClick={() => onClick()}>close</button>
+        <IconClose>
+          
+        </IconClose>
+        <Button onClick={() => onClick()}>close</Button>
         {titles.map((item) => (
           <li key={item.id}>
-            <a href ={item.href} onClick={() => onClick()}>{item.label}</a>
+            <MenuLink
+              to={item.href}
+              spy={true}
+              smooth={true}
+              offset={-90}
+              duration={1000}
+              onClick={() => onClick()}
+            >
+              {item.label}
+            </MenuLink>
           </li>
         ))}
       </ContainerMenu>

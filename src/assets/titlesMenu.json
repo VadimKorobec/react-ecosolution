@@ -1,17 +1,17 @@
 [
     {
-       "id":1, "label":"Main", "href":"/#main"
+       "id":1, "label":"Main", "href":"main"
     },
     {
-       "id":2, "label":"About","href":"/#about"
+       "id":2, "label":"About","href":"about"
     },
     {
-      "id":3,  "label":"Cases", "href":"/#cases"
+      "id":3,  "label":"Cases", "href":"cases"
     },
     {
-       "id":4, "label":"FAQ", "href":"/#faq"
+       "id":4, "label":"FAQ", "href":"faq"
     },
     {
-        "id":5,"label":"Contact Us", "href":"/#contact"
+        "id":5,"label":"Contact Us", "href":"contact"
     }
 ]
