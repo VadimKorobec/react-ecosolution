@@ -24,11 +24,24 @@ export const Title = styled.h2`
     margin-right: auto;
     margin-bottom: 24px;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    line-height: 48px;
+    width: 491px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+  }
 `;
 
 export const LineWrap = styled.div`
   display: flex;
   margin-bottom: 24px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 17px;
+  }
 `;
 
 export const Line = styled.div`
@@ -58,7 +71,14 @@ export const NumbersWrap = styled.div`
     width: 602px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom:100px;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 975px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
   }
 `;
 
@@ -69,9 +89,14 @@ export const Numbers = styled.p`
   line-height: 48px;
   color: #97d28b;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
     font-size: 100px;
     line-height: 100px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 164px;
+    line-height: 164px;
   }
 `;
 
@@ -82,9 +107,13 @@ export const NumbersText = styled.p`
   line-height: 24px;
   color: #173d33;
 
-  @media screen and (min-width:768px) {
-    font-size:28px;
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
     line-height: 48px;
-    
+  }
+
+  @media screen and (min-width:1280px) {
+    font-size: 48px;
+    line-height: 48px;
   }
 `;

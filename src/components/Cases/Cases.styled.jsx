@@ -19,7 +19,13 @@ export const Title = styled.h2`
   @media screen and (min-width: 768px) {
     font-size: 36px;
     line-height: 36px;
-    margin-right:90px;
+    margin-right: 90px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    line-height: 48px;
+    width: 398px;
   }
 `;
 
@@ -29,6 +35,10 @@ export const TitleWrapper = styled.div`
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 38px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 120px;
   }
 `;
 
@@ -48,6 +58,10 @@ export const LineVertical = styled.div`
 
   @media screen and (min-width: 768px) {
     height: 65px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 96px;
   }
 `;
 
@@ -82,6 +96,10 @@ export const Count = styled.p`
 export const ButtonWrap = styled.div`
   display: flex;
   gap: 12px;
+
+  @media screen and (min-width: 1280px) {
+    gap: 24px;
+  }
 `;
 
 export const ArrowLeft = styled(arrowLeft)`
@@ -99,6 +117,11 @@ export const ArrowLeft = styled(arrowLeft)`
   @media screen and (min-width: 768px) {
     margin-left: 126px;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding: 24px;
+    margin-left: 193px;
+  }
 `;
 
 export const ArrowRight = styled(arrowRight)`
@@ -112,6 +135,10 @@ export const ArrowRight = styled(arrowRight)`
     stroke: #97d28b;
     border-color: #97d28b;
   }
+
+  @media screen and (min-width: 1280px) {
+    padding: 24px;
+  }
 `;
 
 export const Icon = styled.img`
@@ -122,14 +149,23 @@ export const Icon = styled.img`
 
 export const Card = styled.div`
   background-color: #eaedf1;
-  @media screen and (min-width:768px) and (max-width:1279px) {
-    width:342px;
-    height:322px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 342px;
+    height: 322px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 596px;
+    height: 506px;
   }
 `;
 
 export const CardWrapper = styled.div`
   padding: 24px 12px 12px 12px;
+
+  @media screen and (min-width:1280px) {
+    padding:36px 48px;
+   }
 `;
 
 export const CardTitleWrap = styled.div`
@@ -137,6 +173,14 @@ export const CardTitleWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 21px;
+
+  @media screen and (min-width:768px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width:1280px) {
+    margin-bottom:36px ;
+  }
 `;
 
 export const CardTitle = styled.h3`
@@ -145,6 +189,17 @@ export const CardTitle = styled.h3`
   line-height: 21.6px;
   color: #173d33;
   height: 66px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 24px;
+    height: 72px;
+  }
+
+  @media screen and (min-width:1280px) {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
 `;
 
 export const CardIcon = styled(Arrow)`
@@ -187,11 +242,11 @@ export const CardsWrap = styled.div`
     margin-bottom: 36px;
   }
 
-  @media screen and (min-width:768px) and (max-width:1279px) {
-    margin-bottom:107px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-bottom: 107px;
   }
 
-  @media screen and (min-width:1280px) {
-    margin-bottom:127px;
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 127px;
   }
 `;

@@ -19,6 +19,15 @@ export const ContainerMenu = styled.div`
   height: 701px;
   border-radius: 25px;
   background-color: #265246;
+
+  @media screen and (min-width:768px) and (max-width:1279px) {
+    right:30px;
+  }
+
+  @media screen and (min-width:1280px) {
+    top:24px;
+    right: 330px;
+  }
 `;
 
 export const IconClose = styled(close)`

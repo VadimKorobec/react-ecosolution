@@ -6,7 +6,7 @@ export const Electricity = () => {
     <Container>
       <Title>Electricity we produced for all time</Title>
       <LineWrap>
-        <Line></Line>
+        <Line/>
       </LineWrap>
       <NumbersWrap>
         <Numbers>1.134.147.814</Numbers>

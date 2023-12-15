@@ -174,8 +174,17 @@ export const Unicode = styled.p`
 
 
 export const Img = styled.img`
-  margin-bottom: 36px;
   background-image: url(../);
 
-  
+  @media screen and (max-width: 767px) {
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width:768px) and (max-width:1279px) {
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width:1280px) {
+    margin-bottom: 120px;
+  }
 `;

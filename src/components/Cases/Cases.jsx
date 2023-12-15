@@ -35,7 +35,7 @@ export const Cases = () => {
       <TitleWrapper>
         <Title>Successful cases of our company</Title>
         <LineWrap>
-          <LineVertical></LineVertical>
+          <LineVertical/>
         </LineWrap>
         <Wrapper>
           <NumberWrap>
