@@ -219,6 +219,10 @@ export const Line = styled.div`
   width: 100%;
   border-bottom: 1px solid #97d28b;
   margin-bottom: 12px;
+
+  @media screen and (min-width:1280px) {
+    margin-bottom:24px ;
+  }
 `;
 
 export const CardTextWrap = styled.div`
@@ -231,6 +235,16 @@ export const CardText = styled.p`
   font-size: 12px;
   line-height: 14.4px;
   color: #173d33;
+
+  @media screen and (min-width:768px) {
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+
+  @media screen and (min-width:1280px) {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
 `;
 
 export const CardsWrap = styled.div`

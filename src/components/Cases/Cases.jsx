@@ -59,7 +59,7 @@ export const Cases = () => {
               </CardTitle>
               <CardIcon />
             </CardTitleWrap>
-            <Line></Line>
+            <Line/>
             <CardTextWrap>
               <CardText>Wind Power for auto field irrigation</CardText>
               <CardText>July 2023</CardText>
@@ -76,7 +76,7 @@ export const Cases = () => {
               </CardTitle>
               <CardIcon />
             </CardTitleWrap>
-            <Line></Line>
+            <Line/>
             <CardTextWrap>
               <CardText>Solar Panels for industrial use</CardText>
               <CardText>November 2023</CardText>
@@ -93,7 +93,7 @@ export const Cases = () => {
               </CardTitle>
               <CardIcon />
             </CardTitleWrap>
-            <Line></Line>
+            <Line/>
             <CardTextWrap>
               <CardText>Thermal modules</CardText>
               <CardText>October 2023</CardText>
@@ -109,7 +109,7 @@ export const Cases = () => {
               </CardTitle>
               <CardIcon />
             </CardTitleWrap>
-            <Line></Line>
+            <Line/>
             <CardTextWrap>
               <CardText>Wind power</CardText>
               <CardText>September 2021</CardText>
@@ -125,7 +125,7 @@ export const Cases = () => {
               </CardTitle>
               <CardIcon />
             </CardTitleWrap>
-            <Line></Line>
+            <Line/>
             <CardTextWrap>
               <CardText>Mini nuclear stations</CardText>
               <CardText>May 2021</CardText>

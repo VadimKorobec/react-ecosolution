@@ -10,8 +10,13 @@ export const Forma = styled.form`
     margin-bottom: 36px;
   }
 
-  @media screen and (min-width:768px) {
-    width:342px;
+  @media screen and (min-width: 768px) {
+    width: 342px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+    padding: 48px 48px;
   }
 `;
 
@@ -28,6 +33,10 @@ export const Input = styled.input`
   outline: none;
   background-color: #eaedf1;
   margin-bottom: 8px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 12px;
+  }
 `;
 
 export const Line = styled.div`

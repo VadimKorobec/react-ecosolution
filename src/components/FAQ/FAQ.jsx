@@ -32,7 +32,7 @@ export const FAQ = () => {
         </Title>
         {titles.map((item, idx) => (
           <Card key={idx}>
-            <Line></Line>
+            <Line/>
             <ContentWrapper onClick={() => setActive(idx)}>
               <CardTitleWrapper>
                 {active === idx ? <PlusIcon /> : <MinusIcon />}

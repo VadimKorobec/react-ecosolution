@@ -10,7 +10,7 @@ export const Title = styled.h2`
   color: #173d33;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom:24px;
+  margin-bottom: 24px;
 
   @media screen and (max-width: 767px) {
     font-size: 28px;
@@ -19,8 +19,14 @@ export const Title = styled.h2`
 
   @media screen and (min-width: 768px) {
     font-size: 36px;
-    line-height:36px;
-    margin-bottom:40px;
+    line-height: 36px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 120px;
   }
 `;
 
@@ -28,20 +34,27 @@ export const Wrapper = styled.div`
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    margin-bottom:100px;
+    margin-bottom: 100px;
+  }
+
+  @media screen and (min-width:1280px) {
+    margin-bottom: 120px;
   }
 `;
 
-
 export const ContentWrapper = styled.div`
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   gap: 24px;
 
-  @media screen and (max-width:767px) {
-    margin-bottom:24px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 24px;
   }
-`
+
+  @media screen and (min-width: 1280px) {
+    gap: 32px;
+  }
+`;
 
 export const SubTitle = styled.h4`
   font-weight: 400;
@@ -49,7 +62,10 @@ export const SubTitle = styled.h4`
   line-height: 19.2px;
   color: #173d33;
   margin-bottom: 8px;
-  
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 16px;
+  }
 `;
 
 export const PhoneWrap = styled.div`
@@ -57,26 +73,44 @@ export const PhoneWrap = styled.div`
   flex-direction: column;
   gap: 12px;
   width: 188px;
+
+  @media screen and (min-width: 1280px) {
+    width: 220px;
+  }
 `;
 
 export const SmsWrap = styled.div`
- width:251px ;
-`
+  width: 251px;
+
+  @media screen and (min-width: 1280px) {
+    width: 296px;
+  }
+`;
 
 export const LinkWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  width:265px;
+  width: 265px;
+
+  @media screen and (min-width:1280px) {
+    width:466px;
+  }
 `;
 
 export const Link = styled.a`
   display: flex;
+  align-items: center;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #173d33;
   gap: 8px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
 `;
 
 export const Address = styled.p`
@@ -84,13 +118,11 @@ export const Address = styled.p`
   font-size: 20px;
   line-height: 24px;
   color: #173d33;
-  
 `;
 
 export const IconWrap = styled.div`
   display: flex;
   gap: 8px;
-  
 `;
 
 export const Icon = styled.img`
@@ -123,6 +155,10 @@ export const Facebook = styled(facebook)`
   &:hover {
     stroke: #97d28b;
   }
+
+  @media screen and (min-width:1280px) {
+    padding: 0;
+  }
 `;
 
 export const Instagram = styled(instagram)`
@@ -132,5 +168,9 @@ export const Instagram = styled(instagram)`
 
   &:hover {
     stroke: #97d28b;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 0;
   }
 `;

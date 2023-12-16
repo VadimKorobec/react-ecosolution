@@ -8,7 +8,12 @@ export const GridWrapper = styled.div`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto auto auto;
     grid-column-gap: 24px;
-    padding-bottom:100px;
+    padding-bottom: 100px;
+  }
+
+  @media screen and (min-width:1280px) {
+    grid-column-gap: 124px;
+    padding-bottom:120px;
   }
 `;
 
@@ -31,11 +36,15 @@ export const Title = styled.h2`
     grid-column-end: 3;
     grid-row-start: 1;
   }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 48px;
+    line-height: 48px;
+  }
 `;
 
 export const Card = styled.li`
   list-style: none;
-  
 
   @media screen and (min-width: 768px) {
     grid-column-start: 1;
@@ -51,10 +60,14 @@ export const ContentWrapper = styled.div`
   padding-top: 16px;
   padding-bottom: 16px;
 
-  
-
   @media screen and (min-width: 768px) {
     width: 342px;
+  }
+
+  @media screen and (min-width:1280px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width:596px;
   }
 `;
 
@@ -74,6 +87,10 @@ export const Line = styled.div`
 
   @media screen and (min-width: 768px) {
     width: 342px;
+  }
+
+  @media screen and (min-width:1280px) {
+    width: 596px;
   }
 `;
 
@@ -106,6 +123,12 @@ export const CardTitle = styled.h3`
   @media screen and (min-width: 768px) {
     width: 342px;
   }
+
+  @media screen and (min-width:1280px) {
+    font-size: 24px;
+    line-height: 28.8px;
+    width:544px;
+  }
 `;
 
 export const CardText = styled.p`
@@ -115,9 +138,16 @@ export const CardText = styled.p`
   color: #173d33;
   margin-left: 18px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width:1279px) {
     width: 298px;
-    margin-left: auto;
+    margin-left:auto;
+  }
+
+  @media screen and (min-width:1280px) {
+    font-size: 16px;
+    line-height: 19.2px;
+    margin-left: 48px;
+    width: 544px;
   }
 `;
 
@@ -126,15 +156,20 @@ export const ButtonWrapper = styled.div`
   flex-direction: column;
   width: 328px;
 
-  @media screen and (max-width:767px) {
-    margin:0 auto;
-    padding-top:20px;
-    padding-bottom:36px;
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 36px;
   }
 
   @media screen and (min-width: 768px) {
     margin-top: auto;
     margin-bottom: 6px;
+  }
+
+
+  @media screen  and (min-width:1280px) {
+    width: 445px;
   }
 `;
 
@@ -144,6 +179,11 @@ export const Text = styled.p`
   line-height: 21.6px;
   color: #173d33;
   margin-bottom: 12px;
+
+  @media screen and (min-width:1280px) {
+    font-size: 24px;
+    line-height: 28.8px;
+  }
 `;
 
 export const Button = styled.button`
@@ -159,4 +199,5 @@ export const Button = styled.button`
   align-items: center;
   gap: 12px;
   margin: 0 auto;
+  cursor: pointer;
 `;

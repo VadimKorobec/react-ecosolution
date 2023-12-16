@@ -1,9 +1,16 @@
 import titles from "../../assets/titlesMenu.json";
 
 import {
+  Arrow,
+  BtnWrapp,
   Button,
   ContainerMenu,
+  Facebook,
   IconClose,
+  IconWrap,
+  Instagram,
+  Item,
+  Line,
   MenuLink,
   Overlay,
 } from "./BurgerMenu.styled";
@@ -12,10 +19,13 @@ export const BurgerMenu = ({ onClick }) => {
   return (
     <Overlay>
       <ContainerMenu>
-        <IconClose/>
-        <Button onClick={() => onClick()}>close</Button>
+        <BtnWrapp>
+          <IconClose />
+          <Button onClick={() => onClick()}>close</Button>
+        </BtnWrapp>
+        <Line />
         {titles.map((item) => (
-          <li key={item.id}>
+          <Item key={item.id}>
             <MenuLink
               to={item.href}
               spy={true}
@@ -25,9 +35,18 @@ export const BurgerMenu = ({ onClick }) => {
               onClick={() => onClick()}
             >
               {item.label}
+              <Arrow />
             </MenuLink>
-          </li>
+          </Item>
         ))}
+        <IconWrap>
+          <a href="https://www.facebook.com/">
+            <Facebook />
+          </a>
+          <a href="https://www.instagram.com/">
+            <Instagram />
+          </a>
+        </IconWrap>
       </ContainerMenu>
     </Overlay>
   );
