@@ -30,3 +30,22 @@ img {
 a {
   text-decoration: none;
 }
+
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.item-1{
+  background-color: aquamarine;
+}
+
+.item-2{
+ background-color: blueviolet;
+}
+
+.item-3{
+ background-color: blue;
+}
