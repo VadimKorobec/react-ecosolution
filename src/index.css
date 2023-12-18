@@ -31,21 +31,13 @@ a {
   text-decoration: none;
 }
 
-.item{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  user-select: none;
+  .slick-slide > div {
+  margin: 0 24px;
 }
 
-.item-1{
-  background-color: aquamarine;
-}
+.slick-list {
+      margin: 0 -24px;
+  } 
 
-.item-2{
- background-color: blueviolet;
-}
 
-.item-3{
- background-color: blue;
-}
+  

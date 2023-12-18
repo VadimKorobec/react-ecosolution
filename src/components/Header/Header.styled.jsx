@@ -10,6 +10,7 @@ export const HeaderWrapper = styled.header`
   padding-top: 36px;
   padding-bottom: 36px;
   width:100%;
+  z-index: 100;
 
   
 
