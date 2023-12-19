@@ -2,7 +2,18 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { Card, Img } from "./Carusel.styled";
+
+import {
+  Card,
+  CardIcon,
+  CardText,
+  CardTextWrap,
+  CardTitle,
+  CardTitleWrap,
+  CardWrapper,
+  Img,
+  Line,
+} from "./Carusel.styled";
 
 const cards = [
   {
@@ -43,7 +54,7 @@ const cards = [
   },
 ];
 
-export const Carusel = () => {
+export const Carusel = ({ sliderRef }) => {
   const settings = {
     dots: false,
     arrows: false,
@@ -51,18 +62,50 @@ export const Carusel = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1280,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
   return (
     <>
-      <Slider {...settings}>
+      <Slider ref={sliderRef} {...settings}>
         {cards.map((item) => (
           <Card key={item.id}>
             <Img src={item.img} alt="" />
-            <h2>{item.title}</h2>
-            <div>
-              <p>{item.dis}</p>
-              <p>{item.data}</p>
-            </div>
+            <CardWrapper>
+              <CardTitleWrap>
+                <CardTitle>{item.title}</CardTitle>
+                <CardIcon />
+              </CardTitleWrap>
+              <Line />
+              <CardTextWrap>
+                <CardText>{item.dis}</CardText>
+                <CardText>{item.data}</CardText>
+              </CardTextWrap>
+            </CardWrapper>
           </Card>
         ))}
       </Slider>

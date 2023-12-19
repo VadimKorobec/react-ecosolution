@@ -1,7 +1,7 @@
 body {
   font-family: "Fira Sans", sans-serif;
   margin: 0;
-  background-color: #F3F5FA;
+  background-color: #f3f5fa;
 }
 
 h1,
@@ -31,13 +31,25 @@ a {
   text-decoration: none;
 }
 
-  .slick-slide > div {
-  margin: 0 24px;
+.slick-slide > div {
+  margin: 0 5px;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin: 0 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin: 0 24px;
+  }
 }
 
 .slick-list {
-      margin: 0 -24px;
-  } 
+  margin: 0 -5px;
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin: 0 -12px;
+  }
 
-
-  
+  @media screen and (min-width: 1280px) {
+    margin: 0 -24px;
+  }
+}

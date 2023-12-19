@@ -1,10 +1,5 @@
+import { useRef } from "react";
 
-
-// import mills from "../../assets/img/mills.jpg";
-// import batteries from "../../assets/img/batteries.jpg";
-// import transformer from "../../assets/img/transformer.jpg";
-// import mills2 from "../../assets/img/mills-2.jpg";
-// import station from "../../assets/img/station.jpg";
 import { Carusel } from "../Carusel/Carusel";
 import { Container } from "../Container/Container";
 import {
@@ -18,7 +13,7 @@ import {
   // CardTitle,
   // CardTitleWrap,
   // CardWrapper,
-   CardsWrap,
+  CardsWrap,
   Count,
   // Line,
   LineVertical,
@@ -31,6 +26,17 @@ import {
 } from "./Cases.styled";
 
 export const Cases = () => {
+  const sliderRef = useRef(null);
+  
+
+  const handleClickRight = () => {
+    sliderRef.current.slickNext();
+  };
+
+  const handleClickLeft = () => {
+    sliderRef.current.slickPrev()
+  };
+
   return (
     <Container id="cases">
       <TitleWrapper>
@@ -44,14 +50,13 @@ export const Cases = () => {
             <Count>/05</Count>
           </NumberWrap>
           <ButtonWrap>
-            <ArrowLeft />
-            <ArrowRight />
+            <ArrowLeft onClick={handleClickLeft} />
+            <ArrowRight onClick={handleClickRight} />
           </ButtonWrap>
         </Wrapper>
       </TitleWrapper>
-
       <CardsWrap>
-        <Carusel />
+        <Carusel sliderRef={sliderRef} />
       </CardsWrap>
     </Container>
   );
