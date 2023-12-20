@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { ReactComponent as arrow } from "../../assets/icon/arrowAbove.svg";
 import { ReactComponent as facebook } from "../../assets/icon/facebook.svg";
 import { ReactComponent as instagram } from "../../assets/icon/instagram.svg";
@@ -86,7 +87,7 @@ export const Address = styled.address`
   margin-bottom: 16px;
 `;
 
-export const Link = styled.a`
+export const Email = styled.a`
   display: block;
   font-weight: 400;
   font-size: 16px;
@@ -130,3 +131,5 @@ export const WrapperDown = styled.div`
     justify-content:space-between;
   }
 `
+
+

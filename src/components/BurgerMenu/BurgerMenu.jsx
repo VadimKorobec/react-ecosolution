@@ -30,7 +30,7 @@ export const BurgerMenu = ({ onClick }) => {
               to={item.href}
               spy={true}
               smooth={true}
-              offset={-90}
+              offset={-115}
               duration={1000}
               onClick={() => onClick()}
             >

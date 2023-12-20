@@ -1,11 +1,11 @@
 import { Container } from "../Container/Container";
 import { Logo } from "../Logo/Logo";
+import { Link } from "react-scroll";
 
 import {
   Line,
   IconWrap,
   Address,
-  Link,
   Unicode,
   ArrowUp,
   Facebook,
@@ -13,6 +13,7 @@ import {
   WrapperUp,
   Section,
   WrapperDown,
+  Email,
 } from "./Footer.styled";
 
 export const Footer = () => {
@@ -22,7 +23,15 @@ export const Footer = () => {
         <Line></Line>
         <WrapperUp>
           <Logo />
-          <ArrowUp />
+          <Link
+            to="main"
+            spy={true}
+            smooth={true}
+            offset={-115}
+            duration={1000}
+          >
+            <ArrowUp />
+          </Link>
           <IconWrap>
             <a href="https://www.facebook.com/">
               <Facebook />
@@ -34,9 +43,9 @@ export const Footer = () => {
         </WrapperUp>
         <WrapperDown>
           <Address>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Address>
-          <Link href="mailto:office@ecosolution.com">
+          <Email href="mailto:office@ecosolution.com">
             office@ecosolution.com
-          </Link>
+          </Email>
           <Unicode>ecosolution &copy; 2023</Unicode>
         </WrapperDown>
       </Section>

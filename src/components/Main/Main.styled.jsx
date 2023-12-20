@@ -148,7 +148,7 @@ export const Adress = styled.p`
   }
 `;
 
-export const Link = styled.a`
+export const Email = styled.a`
   display: block;
   font-weight: 400;
   font-size: 16px;

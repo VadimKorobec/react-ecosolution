@@ -5,17 +5,27 @@ import { ReactComponent as arrow } from "../../assets/icon/arrowDown.svg";
 export const HeaderWrapper = styled.header`
   position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+`;
+
+export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   padding-top: 36px;
   padding-bottom: 36px;
-  width:100%;
-  z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
 
-  
+  @media screen and (min-width: 360px) and (max-width: 479px) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    width:440px;
+    width: 440px;
+    
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {

@@ -12,6 +12,8 @@ export const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(23, 61, 51, 0.25);
+  pointer-events: initial;
+  
 `;
 
 export const ContainerMenu = styled.div`
@@ -30,7 +32,6 @@ export const ContainerMenu = styled.div`
 
   @media screen and (min-width: 1280px) {
     top: 24px;
-    width: 365px;
     right: 17.3%;
   }
 `;
@@ -88,6 +89,8 @@ export const MenuLink = styled(Link)`
   &:hover {
     color: #97d28b;
   }
+
+  
 `;
 
 export const Arrow = styled(arrow)`
@@ -121,3 +124,5 @@ export const Instagram = styled(instagram)`
     stroke: #97d28b;
   }
 `;
+
+ 
