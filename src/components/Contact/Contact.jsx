@@ -1,5 +1,5 @@
 import { Container } from "../Container/Container";
-import { Form } from "../Form/Form";
+import { MessageForm } from "../MessageForm/MessageForm";
 
 import mapSvg from "../../assets/icon/map.svg";
 
@@ -67,7 +67,7 @@ export const Contact = () => {
             </IconWrap>
           </div>
         </ContentWrapper>
-        <Form />
+        <MessageForm/>
       </Wrapper>
     </Container>
   );
