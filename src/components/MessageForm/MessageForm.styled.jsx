@@ -85,3 +85,7 @@ export const Icon = styled.img`
   background-color: #97d28b;
   border-radius: 50%;
 `;
+
+export const Error = styled.div`
+  color: red;
+`

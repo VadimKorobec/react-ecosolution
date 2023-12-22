@@ -1,9 +1,10 @@
-import { Formik } from "formik";
+import { Formik, ErrorMessage } from "formik";
 import { object, string } from "yup";
 
 import arrowRight from "../../assets/icon/arrowRightSmall.svg";
 import {
   Button,
+  Error,
   Forma,
   Icon,
   Input,
@@ -45,16 +46,23 @@ export const MessageForm = () => {
   };
 
   return (
-    <Formik initialValues={initialValues} onSubmit={handleSubmit}>
+    <Formik
+      initialValues={initialValues}
+      onSubmit={handleSubmit}
+      validationSchema={userSchema}
+    >
       <Forma>
         <Label>* Full name:</Label>
         <Input type="text" placeholder="John Rosie" name="name" />
         <Line></Line>
+        <ErrorMessage name="name" render={(msg) => <Error>{msg}</Error>} />
         <Label>* E-mail:</Label>
         <Input type="text" placeholder="johnrosie@gmail.com" name="email" />
+        <ErrorMessage name="email" render={(msg) => <Error>{msg}</Error>} />
         <Line></Line>
         <Label>* Phone:</Label>
         <Input type="text" placeholder="380961234567" name="phone" />
+        <ErrorMessage name="phone" render={(msg) => <Error>{msg}</Error>} />
         <Line></Line>
         <Label>* Your message:</Label>
         <Input type="text" placeholder="Your message" name="message"></Input>
