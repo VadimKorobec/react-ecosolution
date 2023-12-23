@@ -1,4 +1,4 @@
-import { Field,Form } from "formik";
+import { Field, Form } from "formik";
 import styled from "styled-components";
 
 export const Forma = styled(Form)`
@@ -6,6 +6,7 @@ export const Forma = styled(Form)`
   flex-direction: column;
   background-color: #eaedf1;
   padding: 36px 12px;
+  gap: 28px;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 36px;
@@ -22,34 +23,52 @@ export const Forma = styled(Form)`
 `;
 
 export const Label = styled.label`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   font-weight: 400;
   font-size: 16px;
   line-height: 19.2px;
   color: #173d33;
-  margin-bottom: 8px;
+
+  @media screen and (min-width: 1280px) {
+    gap: 12px;
+  }
 `;
 
 export const Input = styled(Field)`
   border: none;
   outline: none;
   background-color: #eaedf1;
-  margin-bottom: 8px;
+  border-bottom: 1px solid #97d28b;
+  padding-bottom: 8px;
 
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 12px;
+  &::placeholder {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #bdbdbd;
   }
 `;
 
-export const Line = styled.div`
-  width: 100%;
+export const InputMessage = styled(Field)`
+  border: none;
+  outline: none;
+  background-color: #eaedf1;
   border-bottom: 1px solid #97d28b;
-  margin-bottom: 28px;
-`;
+  height: 147px;
 
-export const Lina = styled.div`
-  width: 100%;
-  border-bottom: 1px solid #97d28b;
-  margin-bottom: 16px;
+  &::placeholder {
+    position:absolute;
+    top: 0;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #bdbdbd;
+  }
 `;
 
 export const Textarea = styled.textarea`
@@ -87,5 +106,11 @@ export const Icon = styled.img`
 `;
 
 export const Error = styled.div`
-  color: red;
-`
+  right: 0;
+  top: 69px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.4px;
+  position: absolute;
+  color: #d28b8b;
+`;

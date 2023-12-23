@@ -8,9 +8,8 @@ import {
   Forma,
   Icon,
   Input,
+  InputMessage,
   Label,
-  Lina,
-  Line,
 } from "./MessageForm.styled";
 
 const nameRegExp = /^(([A-Za-z]+?)*([A-Za-z]+)?\s)+([A-Za-z]+?)*([A-Za-z]+)?$/;
@@ -46,31 +45,41 @@ export const MessageForm = () => {
   };
 
   return (
-    <Formik
-      initialValues={initialValues}
-      onSubmit={handleSubmit}
-      validationSchema={userSchema}
-    >
-      <Forma>
-        <Label>* Full name:</Label>
-        <Input type="text" placeholder="John Rosie" name="name" />
-        <Line></Line>
-        <ErrorMessage name="name" render={(msg) => <Error>{msg}</Error>} />
-        <Label>* E-mail:</Label>
-        <Input type="text" placeholder="johnrosie@gmail.com" name="email" />
-        <ErrorMessage name="email" render={(msg) => <Error>{msg}</Error>} />
-        <Line></Line>
-        <Label>* Phone:</Label>
-        <Input type="text" placeholder="380961234567" name="phone" />
-        <ErrorMessage name="phone" render={(msg) => <Error>{msg}</Error>} />
-        <Line></Line>
-        <Label>* Your message:</Label>
-        <Input type="text" placeholder="Your message" name="message"></Input>
-        <Lina></Lina>
-        <Button type="submit">
-          Send <Icon src={arrowRight} alt="arrow" />
-        </Button>
-      </Forma>
-    </Formik>
+    <>
+      <Formik
+        initialValues={initialValues}
+        onSubmit={handleSubmit}
+        validationSchema={userSchema}
+      >
+        <Forma>
+          <Label>
+            * Full name:
+            <Input type="text" placeholder="John Rosie" name="name" />
+            <ErrorMessage name="name" render={(msg) => <Error>{msg}</Error>} />
+          </Label>
+          <Label>
+            * E-mail:
+            <Input type="text" placeholder="johnrosie@gmail.com" name="email" />
+            <ErrorMessage name="email" render={(msg) => <Error>{msg}</Error>} />
+          </Label>
+          <Label>
+            * Phone:
+            <Input type="text" placeholder="380961234567" name="phone" />
+            <ErrorMessage name="phone" render={(msg) => <Error>{msg}</Error>} />
+          </Label>
+          <Label>
+            * Message::
+            <InputMessage
+              type="text"
+              placeholder="Your message"
+              name="message"
+            ></InputMessage>
+          </Label>
+          <Button type="submit">
+            Send <Icon src={arrowRight} alt="arrow" />
+          </Button>
+        </Forma>
+      </Formik>
+    </>
   );
 };
