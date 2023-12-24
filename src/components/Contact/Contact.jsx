@@ -1,8 +1,6 @@
 import { Container } from "../Container/Container";
 import { MessageForm } from "../MessageForm/MessageForm";
 
-import mapSvg from "../../assets/icon/map.svg";
-
 import {
   Address,
   Call,
@@ -12,6 +10,7 @@ import {
   Instagram,
   Link,
   LinkWrap,
+  Map,
   PhoneWrap,
   Sms,
   SmsWrap,
@@ -22,7 +21,7 @@ import {
 
 export const Contact = () => {
   return (
-    <Container id='contact'>
+    <Container id="contact">
       <Title>Contact us</Title>
       <Wrapper>
         <ContentWrapper>
@@ -51,8 +50,10 @@ export const Contact = () => {
           <div>
             <SubTitle>Address</SubTitle>
             <LinkWrap>
-              <img src={mapSvg} alt="map" />
-              <Address>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Address>
+              <Address>
+                <Map style={{height:'24px'}}/>
+                79005, Ukraine, Lvivstreet. Shota Rustaveli, 7
+              </Address>
             </LinkWrap>
           </div>
           <div>
@@ -67,7 +68,7 @@ export const Contact = () => {
             </IconWrap>
           </div>
         </ContentWrapper>
-        <MessageForm/>
+        <MessageForm />
       </Wrapper>
     </Container>
   );

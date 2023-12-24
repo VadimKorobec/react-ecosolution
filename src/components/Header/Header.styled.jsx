@@ -12,7 +12,6 @@ export const HeaderWrapper = styled.header`
 
 export const Container = styled.header`
   display: flex;
-  justify-content: space-between;
   padding-top: 36px;
   padding-bottom: 36px;
   margin-left: auto;
@@ -25,7 +24,6 @@ export const Container = styled.header`
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
     width: 440px;
-    
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -43,6 +41,7 @@ export const BtnMenu = styled(menu)`
   padding: 12px 12px;
   background-color: #dcefd8;
   border-radius: 50%;
+  margin-left: auto;
   cursor: pointer;
 
   &:hover {

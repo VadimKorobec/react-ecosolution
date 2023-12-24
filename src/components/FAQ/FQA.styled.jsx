@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { ReactComponent as plus } from "../../assets/icon/plus.svg";
 import { ReactComponent as minus } from "../../assets/icon/minus.svg";
+import { ReactComponent as arrow } from "../../assets/icon/arrowDown.svg";
 
 export const GridWrapper = styled.div`
   @media screen and (min-width: 768px) {
@@ -188,16 +189,36 @@ export const Text = styled.p`
 
 export const Button = styled.button`
   display: flex;
-  padding: 10px 12px 10px 16px;
+  align-items: center;
+  justify-content: space-between;
+  width: 140px;
+  height: 39px;
   border-radius: 500px;
+  padding: 10px 16px 10px 16px;
+  margin-left: 12px;
   border: none;
   background-color: #97d28b;
+  color: #173d33;
   font-weight: 400;
   font-size: 16px;
   line-height: 19.2px;
-  color: #173d33;
-  align-items: center;
-  gap: 12px;
-  margin: 0 auto;
+  margin:0 auto;
   cursor: pointer;
+
+  &:hover {
+    background-color: #173d33;
+    color: #97d28b;
+  }
+
+  
+`;
+
+export const ArrowDown = styled(arrow)`
+  padding: 3px;
+  border-radius: 50px;
+  background-color: #173d33;
+
+  ${Button}:hover & {
+    background-color: #97d28b;
+  }
 `;

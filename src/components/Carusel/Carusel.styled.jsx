@@ -20,6 +20,7 @@ export const CardTitle = styled.h2`
   line-height: 21.6px;
   color: #173d33;
   height: 66px;
+  width: 192px;
  
   @media screen and (min-width: 768px) {
     font-size: 18px;

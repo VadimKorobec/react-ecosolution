@@ -3,6 +3,7 @@ import { ReactComponent as call } from "../../assets/icon/call.svg";
 import { ReactComponent as sms } from "../../assets/icon/sms.svg";
 import { ReactComponent as facebook } from "../../assets/icon/facebook.svg";
 import { ReactComponent as instagram } from "../../assets/icon/instagram.svg";
+import { ReactComponent as map } from "../../assets/icon/map.svg";
 
 export const Title = styled.h2`
   font-family: "Oswald", sans-serif;
@@ -37,7 +38,7 @@ export const Wrapper = styled.div`
     margin-bottom: 100px;
   }
 
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     margin-bottom: 120px;
   }
 `;
@@ -91,10 +92,9 @@ export const LinkWrap = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  width: 265px;
 
-  @media screen and (min-width:1280px) {
-    width:466px;
+  @media screen and (min-width: 1280px) {
+    width: 466px;
   }
 `;
 
@@ -114,10 +114,14 @@ export const Link = styled.a`
 `;
 
 export const Address = styled.p`
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: #173d33;
+  cursor: pointer;
 `;
 
 export const IconWrap = styled.div`
@@ -147,6 +151,16 @@ export const Sms = styled(sms)`
   }
 `;
 
+export const Map = styled(map)`
+  height: 25px;
+  stroke: #173d33;
+  cursor: pointer;
+
+  ${Address}:hover & {
+    stroke: #97d28b;
+  }
+`;
+
 export const Facebook = styled(facebook)`
   padding: 12px;
   stroke: #173d33;
@@ -156,7 +170,7 @@ export const Facebook = styled(facebook)`
     stroke: #97d28b;
   }
 
-  @media screen and (min-width:1280px) {
+  @media screen and (min-width: 1280px) {
     padding: 0;
   }
 `;

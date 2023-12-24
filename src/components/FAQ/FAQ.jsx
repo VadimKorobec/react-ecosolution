@@ -1,11 +1,12 @@
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 import { Container } from "../Container/Container";
 
-import ellips from "../../assets/icon/ellipse.svg";
 import titles from "../../assets/titles.json";
 
 import {
+  ArrowDown,
   Button,
   ButtonWrapper,
   Card,
@@ -25,19 +26,19 @@ export const FAQ = () => {
   const [active, setActive] = useState(0);
 
   return (
-    <Container id='faq'>
+    <Container id="faq">
       <GridWrapper>
         <Title>
           Frequently Asked <br /> Questions
         </Title>
         {titles.map((item, idx) => (
           <Card key={idx}>
-            <Line/>
+            <Line />
             <ContentWrapper onClick={() => setActive(idx)}>
               <CardTitleWrapper>
                 {active === idx ? <PlusIcon /> : <MinusIcon />}
                 <CardTitle>{item.title}</CardTitle>
-              </CardTitleWrapper >
+              </CardTitleWrapper>
               {active === idx ? (
                 <CardText>
                   Wind turbines and solar panels generate electricity through
@@ -59,9 +60,17 @@ export const FAQ = () => {
         ))}
         <ButtonWrapper>
           <Text>Didn't find the answer to your question? </Text>
-          <Button>
-            Contact Us <img src={ellips} alt="ellips" />
-          </Button>
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-115}
+            duration={1000}
+          >
+            <Button type="button">
+              Get in touch <ArrowDown />
+            </Button>
+          </Link>
         </ButtonWrapper>
       </GridWrapper>
     </Container>
